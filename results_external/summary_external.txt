@@ -1,0 +1,57 @@
+========================================================================
+  TEST EXTERNAL — Scenario 3 models trên dữ liệu ngoài
+========================================================================
+
+Device : cuda
+GPU    : NVIDIA GeForce RTX 5070 Ti
+
+Load từ điển từ: D:\job\pycharm\Word-BasedDGA\dictionary
+  dictDGA=9,274  dictOnlyDGA=3,506  dictOnlyNLTK=228,630  (0.0s)
+
+Tìm thấy 3 model đã train:
+  • bert-base-uncased                   best_ep=13  max_len=128  [bert-base-uncased__scenario3]
+  • distilbert-base-uncased             best_ep=26  max_len=128  [distilbert-base-uncased__scenario3]
+  • ehsanaghaei/SecureBERT              best_ep=26  max_len=128  [ehsanaghaei__SecureBERT__scenario3]
+
+Đọc 2 file external từ: D:\job\pycharm\Word-BasedDGA\dga_test_external
+  • gen2k26ver1               : 500 domain
+  • gen2k26ver2               : 500 domain
+
+Build feature string (Scenario 3) ...
+  gen2k26ver1              : 500 inputs (0.0s)
+  gen2k26ver2              : 500 inputs (0.0s)
+
+------------------------------------------------------------------------
+INFERENCE — 3 model × 2 họ
+------------------------------------------------------------------------
+
+▶ bert-base-uncased
+  Đang load từ D:\job\pycharm\Word-BasedDGA\results_s3\bert-base-uncased__scenario3\best_model ...
+  gen2k26ver1              : DR=0.9580  (479/500)  0.4s
+  gen2k26ver2              : DR=0.4700  (235/500)  0.2s
+
+▶ distilbert-base-uncased
+  Đang load từ D:\job\pycharm\Word-BasedDGA\results_s3\distilbert-base-uncased__scenario3\best_model ...
+  gen2k26ver1              : DR=0.8840  (442/500)  0.1s
+  gen2k26ver2              : DR=0.2760  (138/500)  0.1s
+
+▶ ehsanaghaei/SecureBERT
+  Đang load từ D:\job\pycharm\Word-BasedDGA\results_s3\ehsanaghaei__SecureBERT__scenario3\best_model ...
+  gen2k26ver1              : DR=0.7720  (386/500)  0.2s
+  gen2k26ver2              : DR=0.0560  (28/500)  0.2s
+
+========================================================================
+BẢNG TỔNG HỢP — Detection Rate (DR) theo họ × model
+========================================================================
+  Họ DGA                    bert-base-unca  distilbert-bas  SecureBERT      
+  --------------------------------------------------------------------------
+  gen2k26ver1               0.9580 (479/500)  0.8840 (442/500)  0.7720 (386/500)  
+  gen2k26ver2               0.4700 (235/500)  0.2760 (138/500)  0.0560 (28/500)  
+  --------------------------------------------------------------------------
+  Trung bình                0.7140            0.5800            0.4140            
+========================================================================
+
+Ghi CSV chi tiết ...
+  → D:\job\pycharm\Word-BasedDGA\results_external\detail_bert-base-uncased.csv
+  → D:\job\pycharm\Word-BasedDGA\results_external\detail_distilbert-base-uncased.csv
+  → D:\job\pycharm\Word-BasedDGA\results_external\detail_ehsanaghaei__SecureBERT.csv
