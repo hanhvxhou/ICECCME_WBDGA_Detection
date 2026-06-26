@@ -1,0 +1,121 @@
+{
+  "seed": 42,
+  "tldextract_used": true,
+  "config": {
+    "benign_path": "E:\\DGABotnet2k25\\Word-BasedDGA\\legit-1000000.txt",
+    "dga_dir": "E:\\DGABotnet2k25\\Word-BasedDGA\\Dataset\\wordBased",
+    "n_benign": 78000,
+    "n_per_family": 6000
+  },
+  "splits": {
+    "train": {
+      "total": 109200,
+      "benign": 54600,
+      "dga": 54600
+    },
+    "val": {
+      "total": 23400,
+      "benign": 11700,
+      "dga": 11700
+    },
+    "test": {
+      "total": 23400,
+      "benign": 11700,
+      "dga": 11700
+    }
+  },
+  "benign_groups_chosen": 77342,
+  "families": {
+    "banjori50k": {
+      "groups_chosen": 6000,
+      "fqdns_chosen": 6000,
+      "train": 4200,
+      "val": 900,
+      "test": 900
+    },
+    "bigviktor50k": {
+      "groups_chosen": 6000,
+      "fqdns_chosen": 6000,
+      "train": 4200,
+      "val": 900,
+      "test": 900
+    },
+    "gozi_gpl50k": {
+      "groups_chosen": 6000,
+      "fqdns_chosen": 6000,
+      "train": 4200,
+      "val": 900,
+      "test": 900
+    },
+    "gozi_luther50k": {
+      "groups_chosen": 6000,
+      "fqdns_chosen": 6000,
+      "train": 4200,
+      "val": 900,
+      "test": 900
+    },
+    "gozi_nasa20k": {
+      "groups_chosen": 6000,
+      "fqdns_chosen": 6000,
+      "train": 4200,
+      "val": 900,
+      "test": 900
+    },
+    "gozi_rfc4343_50k": {
+      "groups_chosen": 6000,
+      "fqdns_chosen": 6000,
+      "train": 4200,
+      "val": 900,
+      "test": 900
+    },
+    "matsnu50k": {
+      "groups_chosen": 6000,
+      "fqdns_chosen": 6000,
+      "train": 4200,
+      "val": 900,
+      "test": 900
+    },
+    "ngioweb30K": {
+      "groups_chosen": 6000,
+      "fqdns_chosen": 6000,
+      "train": 4200,
+      "val": 900,
+      "test": 900
+    },
+    "nymaim250k": {
+      "groups_chosen": 6000,
+      "fqdns_chosen": 6000,
+      "train": 4200,
+      "val": 900,
+      "test": 900
+    },
+    "pizd16k": {
+      "groups_chosen": 6000,
+      "fqdns_chosen": 6000,
+      "train": 4200,
+      "val": 900,
+      "test": 900
+    },
+    "suppobox_1_20k": {
+      "groups_chosen": 6000,
+      "fqdns_chosen": 6000,
+      "train": 4200,
+      "val": 900,
+      "test": 900
+    },
+    "suppobox_2_20k": {
+      "groups_chosen": 6000,
+      "fqdns_chosen": 6000,
+      "train": 4200,
+      "val": 900,
+      "test": 900
+    },
+    "suppobox_3_10k": {
+      "groups_chosen": 6000,
+      "fqdns_chosen": 6000,
+      "train": 4200,
+      "val": 900,
+      "test": 900
+    }
+  }
+}
