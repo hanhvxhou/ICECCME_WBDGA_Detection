@@ -1,0 +1,7 @@
+{
+  "model_name": "bert-base-uncased",
+  "scenario": "3",
+  "max_len": 128,
+  "best_epoch": 13,
+  "amp": "AMP BF16"
+}

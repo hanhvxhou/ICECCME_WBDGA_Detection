@@ -1,0 +1,7 @@
+{
+  "model_name": "ehsanaghaei/SecureBERT",
+  "scenario": "3",
+  "max_len": 128,
+  "best_epoch": 26,
+  "amp": "AMP BF16"
+}
