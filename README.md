@@ -33,8 +33,8 @@ Word-based Domain Generation Algorithms (wDGA) produce domain names by concatena
 | Model | F1 (%) | ACC (%) | FPR (%) | FNR (%) |
 |-------|--------|---------|---------|---------|
 | DistilBERT | 98.15 | 98.16 | 1.66 | 2.03 |
-| BERT-base | 98.33 | **98.33** | 1.76 | **1.58** |
-| SecureBERT | **98.37** | 98.38 | **1.56** | 1.69 |
+| BERT-base | 98.33 | 98.33 | 1.76 | **1.58** |
+| SecureBERT | **98.37** | **98.38** | **1.56** | 1.69 |
 
 ## Project Structure
 
